@@ -22,7 +22,7 @@ interface props {
 }
 
 export const menuItems = [
-  { title: "Dashboard", icon: <Home />, url: "/" },
+  { title: "Dashboard", icon: <Home />, url: "/Dashboard" },
   { title: "Teachers", icon: <Users />, url: "/Teachers" },
   { title: "Students", icon: <User />, url: "/Students" },
   { title: "Schedule", icon: <Calendar />, url: "/Schedule" },
