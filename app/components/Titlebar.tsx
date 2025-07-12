@@ -18,10 +18,10 @@ const Titlebar = ({ setEnableNav, selectMenu }: props) => {
       />
       <div>
         <p className="font-semibold text-l md:text-[1.5vw]">
-          {selectMenu} {selectMenu === "Teachers" && " / Mujeeb Rahman"}
+          {selectMenu}{" "}
+          {selectMenu === "Teachers" ? " / Mujeeb Rahman" : selectMenu}
         </p>
       </div>
-      
     </div>
   );
 };
