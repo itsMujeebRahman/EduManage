@@ -4,16 +4,6 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { mail } from "./Types/Types";
 
-const dummy: mail[] = [
-  {
-    mailId: "mujeebrahman8943@gmail.com",
-    type: "Personal",
-  },
-  {
-    mailId: "alex@yahoo.com",
-    type: "Work",
-  }
-];
 
 const Reset: mail = {
   mailId: "",
@@ -52,9 +42,7 @@ const Email = ({ isEdit }: props) => {
     setMailList((Prev) => Prev.filter((m) => m?.mailId !== mail));
   };
 
-  useEffect(() => {
-    setMailList(dummy);
-  });
+
 
   return (
     <div

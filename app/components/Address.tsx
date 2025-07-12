@@ -3,12 +3,6 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { Add } from "./Types/Types";
 import toast from "react-hot-toast";
 
-const dummy: Add = {
-  Address1: "48 Elmtree Drive  ",
-  Address2: "Springfield, IL conada",
-  Address3: "United States",
-  Code: "653456",
-};
 
 const Reset: Add = {
   Address1: "",
@@ -37,9 +31,7 @@ const Address = ({isEdit}:props) => {
     }
   };
 
-  useEffect(() => {
-    setAddress(dummy);
-  });
+
 
   return (
     <div

@@ -4,16 +4,6 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { contact } from "./Types/Types";
 
-const dummy: contact[] = [
-  {
-    contactNo: "+8943018578",
-    type: "Personal",
-  },
-  {
-    contactNo: "+4675658757586",
-    type: "Work",
-  },
-];
 
 const Reset: contact = {
   contactNo: "",
@@ -52,9 +42,7 @@ const Contact = ({ isEdit }: props) => {
     setContactList((Prev) => Prev.filter((m) => m?.contactNo !== contactNo));
   };
 
-    useEffect(() => {
-      setContactList(dummy);
-    });
+
   
 
   return (

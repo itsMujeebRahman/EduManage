@@ -4,23 +4,6 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Qualify } from "./Types/Types";
 
-const dummy: Qualify[] = [
-  {
-    Studies: "Bachelors",
-    Collage: "University of California, Berkeley",
-    Score: "8.5 CGPA",
-  },
-  {
-    Studies: "Masters",
-    Collage: "Massachusetts Institute of Technology (MIT)",
-    Score: "9.1 CGPA",
-  },
-  {
-    Studies: "PHD",
-    Collage: "Stanford University",
-    Score: "9.3 CGPA",
-  },
-];
 
 const Reset: Qualify = {
   Collage: "",
@@ -58,9 +41,6 @@ const Qualification = ({ isEdit }: props) => {
     setQualificationList((Prev) => Prev.filter((m) => m?.Collage !== collage));
   };
 
-  useEffect(() => {
-    setQualificationList(dummy);
-  });
 
   return (
     <div className="flex flex-col gap-[3vw] md:gap-[1vw] border-t border-gray-300  ">
